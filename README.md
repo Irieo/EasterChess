@@ -1,41 +1,41 @@
 # ChessEngine (Easter nights project)
 
-*An attempt to write a chess engine with zero knowledge what I do*
+*An attempt to write a chess engine using python with zero knowledge what I do*
 
 let's define a "success" as when this thing beats me (my chess.com rating ~1500) 
+ 
 
----
+### Some concepts to learn on the way:
 
-## Some concepts to learn on the way
-
-### Chess & CS of Chess:
 - [Castling](https://en.wikipedia.org/wiki/Castling)
 - [en passant](https://en.wikipedia.org/wiki/En_passant)
 - [python chess GitHub](https://github.com/niklasf/python-chess)
 - [python chess docs](https://python-chess.readthedocs.io/en/latest/)
-- [Forsyth–Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
+- [Forsyth–Edwards notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
+- [pgn notation](https://en.wikipedia.org/wiki/Portable_Game_Notation)
 - [Board representation (computer chess)](https://en.wikipedia.org/wiki/Board_representation_(computer_chess))
-
-### Tech:
 - [curl](https://www.prostdev.com/post/the-power-of-curl)
-
-### Math:
 - [minimax](https://en.wikipedia.org/wiki/Minimax)
 - [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation)
 
-### Data
+### Chess databases:
+
 - [Caissabase](http://caissabase.co.uk/)
 - [KingBase (archive)](https://archive.org/details/KingBase2018)
 
+used data: [KingBase2018-pgn.zip 409.3M](https://archive.org/download/KingBase2018)
+
 ### AI representation of chess problem
+
 - [G. Hotz twitchchess](https://gitshub.com/geohot/twitchchess)
 
 Objective Value: V = f(state) 
 
 let's assume:
-V = -1 black wins board state
-V = 0 draw board state
-V = 1 white wins board state 
+- V = -1 black wins board state
+- V = 0 draw board state
+- V = 1 white wins board state 
+
 
 State(Board):
 
