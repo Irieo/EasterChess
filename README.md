@@ -55,4 +55,5 @@ Extra state:
 - To move
 
 Neurons:
-8x8x4 + 1 = 257 bits (vector of 0 or 1)
+- 8x8x4 + 1 = 257 bits (vector of 0 or 1)
+- 8x8x5 
