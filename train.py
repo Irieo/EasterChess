@@ -25,6 +25,5 @@ for fn in os.listdir("data"):
         for i, move in enumerate(game.mainline_moves()):
             board.push(move)
             # extract positions
-            print(value, State(board).serialize())
-        exit(0)
+            print(value, State(board).serialize()[:,:,0])
     break

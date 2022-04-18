@@ -15,6 +15,7 @@ let's define a "success" as when this thing beats me (my chess.com rating ~1500)
 - [pgn notation](https://en.wikipedia.org/wiki/Portable_Game_Notation)
 - [Board representation (computer chess)](https://en.wikipedia.org/wiki/Board_representation_(computer_chess))
 - [curl](https://www.prostdev.com/post/the-power-of-curl)
+- [python data types](https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html)
 - [minimax](https://en.wikipedia.org/wiki/Minimax)
 - [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation)
 
