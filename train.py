@@ -7,7 +7,7 @@ from state import State
 
 # def shredder_fen_to_vec(x): 
 
-def get_dataset():
+def get_dataset(num_samples=None):
 
     X,Y = [], []
     gn = 0
@@ -22,11 +22,11 @@ def get_dataset():
                 game = chess.pgn.read_game(pgn)
             except Exception: 
                 break
-            print ("parsing game %d, got %d examples" % (gn, len(X)))
-            gn += 1
-            # define Values
+
+            # define Value
             value = {'1/2-1/2':0, '0-1':-1, '1-0':1}[game.headers['Result']]
             # print(value)
+            
             # Iterate through all moves and play them on a board
             board = game.board()
             for i, move in enumerate(game.mainline_moves()):
@@ -35,7 +35,10 @@ def get_dataset():
                 ser = State(board).serialize()[:,:,0]
                 X.append(ser)
                 Y.append(value)
-        break
+            print ("parsing game %d, got %d examples" % (gn, len(X)))
+            if num_samples is not None and len(X) > num_samples:
+                return X,Y 
+            gn += 1
 
 if __name__ == "__main__":
-    get_dataset()
+    X, Y = get_dataset(1000)
