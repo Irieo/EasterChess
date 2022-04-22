@@ -47,7 +47,7 @@ class State(object):
 
         # 4th column is who's turn it is
         state[:,:,4] = (self.board.turn*1.0)
-        print()
+        # print()
 
         # 257 bits according to readme
         # pp = self.board.shredder_fen()
