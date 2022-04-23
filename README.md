@@ -4,6 +4,10 @@
 
 let's define a "success" as when this thing beats me (my chess.com rating ~1500) 
  
+On a background: this is rather a fun way to refresh knowledge of numpy & python classes which I need for my research.
+
+### credits
+this project is eventually based on [G. Hotz twitchchess](https://gitshub.com/geohot/twitchchess) GitHub repo and reverse engineering attempt to grasp how things work.
 
 ### Some concepts to learn on the way:
 
@@ -19,6 +23,7 @@ let's define a "success" as when this thing beats me (my chess.com rating ~1500)
 - [visual for numpy 3D arrays](https://jalammar.github.io/visual-numpy/)
 - [minimax](https://en.wikipedia.org/wiki/Minimax)
 - [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation)
+- [h5py](https://docs.h5py.org/en/stable/index.html)
 
 ### Chess databases:
 
@@ -27,9 +32,14 @@ let's define a "success" as when this thing beats me (my chess.com rating ~1500)
 
 used data: [KingBase2018-pgn.zip 409.3M](https://archive.org/download/KingBase2018)
 
-### AI representation of chess problem
+### interesting but eventually not useful:
 
-- [G. Hotz twitchchess](https://gitshub.com/geohot/twitchchess)
+- [CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)
+
+### AI framework
+- [pytorch](https://pytorch.org/)
+
+### notes 
 
 Objective Value: V = f(state) 
 
@@ -37,7 +47,6 @@ let's assume:
 - V = -1 black wins board state
 - V = 0 draw board state
 - V = 1 white wins board state 
-
 
 State(Board):
 
