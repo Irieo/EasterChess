@@ -38,6 +38,7 @@ used data: [KingBase2018-pgn.zip 409.3M](https://archive.org/download/KingBase20
 
 ### AI framework
 - [pytorch](https://pytorch.org/)
+- [pytorch docs Dataset](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html)
 
 ### notes 
 

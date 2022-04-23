@@ -26,7 +26,7 @@ def get_dataset(num_samples=None):
                 break
 
             # define Value
-            value = {'1/2-1/2':0, '0-1':-1, '1-0':1}[game.headers['Result']]
+            value = {'1/2-1/2':0, '0-1':-1, '1-0':1, '*':0}[game.headers['Result']]
             # print(value)
             
             # Iterate through all moves and play them on a board
@@ -38,13 +38,18 @@ def get_dataset(num_samples=None):
                 X.append(ser)
                 Y.append(value)
             print ("parsing game %d, got %d examples" % (gn, len(X)))
+            # num_samples=1000 -> parsing game 12, got 1134 examples
+
             if num_samples is not None and len(X) > num_samples:
-                return X,Y 
+                return X, Y 
             gn += 1
         X = np.array(X)
         Y = np.array(Y)
-        return X,Y
+        return X, Y
 
 if __name__ == "__main__":
-    X, Y = get_dataset(1e3)
-    np.savez("processed/dataset_1k.npz", X, Y)
+    # X, Y = get_dataset(1e3)
+    # np.savez("processed/dataset_1k.npz", X, Y)
+    
+    X, Y = get_dataset()
+    np.savez("processed/dataset_full.npz", X, Y)
