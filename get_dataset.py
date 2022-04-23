@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 import os
-from webbrowser import get
 import chess.pgn
+import h5py 
+import numpy as np
 from state import State
+# from webbrowser import get
 
 # def shredder_fen_to_vec(x): 
 
@@ -39,6 +41,10 @@ def get_dataset(num_samples=None):
             if num_samples is not None and len(X) > num_samples:
                 return X,Y 
             gn += 1
+        X = np.array(X)
+        Y = np.array(Y)
+        return X,Y
 
 if __name__ == "__main__":
-    X, Y = get_dataset(1000)
+    X, Y = get_dataset(1e3)
+    np.savez("processed/dataset_1k.npz", X, Y)

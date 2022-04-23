@@ -2,12 +2,12 @@
 
 *An attempt to write a chess engine using python with zero knowledge what I do*
 
-let's define a "success" as when this thing beats me (my chess.com rating ~1500) 
+let's define a "success" as when this thing beats me (chess.com rating is at 1500) 
  
-On a background: this is rather a fun way to refresh knowledge of numpy & python classes which I need for my research.
+On a background: it is a fun way to refresh knowledge of python, especially data manipulations, which I need for my research. 
 
 ### credits
-this project is eventually based on [G. Hotz twitchchess](https://gitshub.com/geohot/twitchchess) GitHub repo and reverse engineering attempt to grasp how things work.
+this project is eventually based on [G. Hotz twitchchess](https://gitshub.com/geohot/twitchchess) GitHub repo and my reverse engineering attempt to grasp how things work.
 
 ### Some concepts to learn on the way:
 
